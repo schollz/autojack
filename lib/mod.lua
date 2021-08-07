@@ -34,7 +34,7 @@ local function load_jack(num,connect)
   osexecute(cmd)
 end
 
-mod.hook.register("system_post_startup","opzop1",function()
+mod.hook.register("system_post_startup","autojack",function()
   local alsacards={"OPZ","OP1"}
   print("running opzop1")
   osexecute("killall alsa_in")
